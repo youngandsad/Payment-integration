@@ -1,0 +1,153 @@
+@font-face {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: normal;
+  src: url('../fonts/Roboto-Medium.ttf') format("ttf"),
+}
+
+
+* {
+  box-sizing: border-box;
+}
+
+html, body {
+  padding: 0;
+  margin: 0;
+  font-family: "Roboto";
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
+.products-content {
+  max-width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.product-block {
+  display: flex;
+  padding: 10px;
+}
+
+.product-block .product {
+  height: 300px;
+  max-height: 100%;
+  padding: 20px 15px;
+  margin: 15px;
+  border-radius: 15px;
+  border: 1px solid lightgrey;
+}
+
+.product .quantity {
+  display: flex;
+  align-items: center;
+  margin-top: 5px;
+}
+
+.product .quantity input {
+  width: 50px;
+  padding: 5px;
+  margin: 10px 0;
+  border-radius: 5px;
+  border: 1px solid lightgrey;
+}
+
+.payment-btn {
+  margin-top: 10px;
+}
+
+.default-btn {
+  background: #ffdd2d;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.default-btn:hover {
+  background-color: #fcc521;
+  border-color: #fcc521;
+}
+
+.pay {
+  font-size: 20px;
+}
+
+.price {
+  font-weight: bold;
+}
+
+.count {
+  display: none;
+}
+
+.input-block {
+  border: 1px solid #ffdd2d;
+  display: flex;
+  align-items: center;
+  border-radius: 10px;
+  margin-left: 10px;
+}
+
+.input-block .minus {
+  background: #ffdd2d;
+  border: none;
+  padding: 10px;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+  cursor: pointer;
+}
+
+.input-block .plus {
+  background: #ffdd2d;
+  border: none;
+  padding: 10px;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+  cursor: pointer;
+}
+
+.input-block .minus:hover, .input-block .plus:hover {
+  background-color: #fcc521;
+  border-color: #fcc521;
+}
+
+/* .input-block button {
+outline:none;
+background-color: transparent;
+border: none;
+align-items: center;
+justify-content: center;
+cursor: pointer;
+margin: 0;
+position: relative;
+} */
+
+.not-clicked {
+  display: block;
+}
+
+.clicked {
+  display: none;
+}
+
+.input-block input[type=number] {
+  font-family: sans-serif;
+  max-width: 3rem;
+  padding: 0;
+  border: none;
+  font-size: 18px;
+  height: 20px;
+  text-align: center;
+  margin-top: 0;
+  margin-bottom: 0;
+}
