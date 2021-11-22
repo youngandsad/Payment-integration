@@ -134,7 +134,7 @@ window.onload = () => {
     .then((data) => {
       if(data.Success == true) {
         arrItems = [];
-        window.location.href = data.PaymentURL;
+        window.open(data.PaymentURL, '_blank');
       }
     });
   }
